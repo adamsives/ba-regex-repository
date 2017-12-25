@@ -1,0 +1,36 @@
+ADAM SIVES
+26 DEC 2017
+
+<h1>Purpose of this document</h1>
+Need to find all email addresses in  document? Perhaps you need to validate a given email address in a user input field. Try this...it's not perfect but should get you for 99.99% of cases.</br>
+
+<h2>Other things</h2>
+From Wikipedia:</br>
+"The general format of an email address is local-part@domain, and a specific example is jsmith@example.com. An address consists of two parts. The part before the @ symbol (local-part) identifies the name of a mailbox. This is often the username of the recipient, e.g., jsmith."</br>
+<i>Source:</i><a href="https://en.wikipedia.org/wiki/Email_address">Wikipedia</a></br>
+</br>
+There are exceptions to the rule however.</br>
+<h3>List of Valid Email Addresses this regex will match</h3>
+email@example.com</br>
+firstname.lastname@example.com</br>
+email@subdomain.example.com</br>
+email@123.123.123.123</br>
+1234567890@example.com</br>
+email@example-one.com</br>
+_______@example.com</br>
+email@example.name</br>
+email@example.museum</br>
+email@example.co.jp</br>
+firstname-lastname@example.com</br>
+</br>
+<h3>List of Valid Email Addresses this regex will NOT match</h3>
+email@[123.123.123.123]</br>
+“email”@example.com</br>
+firstname+lastname@example.com</br>
+
+<h3>List of Strange but Valid Email Addresses this regex will NOT match</h3>
+much.“more\ unusual”@example.com</br>
+very.unusual.“@”.unusual.com@example.com</br>
+very.“(),:;<>[]”.VERY.“very@\\ "very”.unusual@strange.example.com</br>
+</br>
+<i>Source:</i><a href="http://codefool.tumblr.com/post/15288874550/list-of-valid-and-invalid-email-addresses">Codefool</a>
